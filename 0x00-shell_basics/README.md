@@ -1,0 +1,1 @@
+Solving  shell basic assignment
