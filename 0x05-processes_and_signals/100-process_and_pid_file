@@ -2,7 +2,7 @@
 # This script displays 'To infinity and beyond' every 2 seconds on an infinite
 # loop
 echo $$ | sudo tee -a /var/run/myscript.pid > /dev/null
-trap 'echo I hate the kill command ; sudo rm /var/run/holbertonscript.pid ; exit' TERM
+trap 'echo I hate the kill command ; sudo rm /var/run/myscript.pid ; exit' TERM
 trap 'echo Y U no love me?!' INT
 trap 'sudo rm /var/run/myscript.pid ; exit' QUIT
 while true
